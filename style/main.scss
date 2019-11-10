@@ -6,6 +6,19 @@ $shadow: 0 1px 5px rgba(76, 76, 76, 0.7);
 
 $font-style: 'Roboto', sans-serif;
 
+%boxes {
+  background: $color-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2rem;
+  * { /* wildcard */
+    margin-bottom: 20px;
+  }
+}
+
+
 *,
 *::after,
 *::before {
@@ -14,16 +27,15 @@ $font-style: 'Roboto', sans-serif;
   box-sizing: inherit; }
 
 html {
-  /* This is the root selector */
-  font-size: 62.5%; 
+  font-size: 62.5%; /* root is 10px = 1rem */
 
   body {
     box-sizing: border-box;
-    background: $color-light;
     font-family: $font-style;
     font-size: 1rem;
     margin: 10px;
     line-height: 1.5;
+    background: $color-medium;
    }
 }
 
@@ -33,13 +45,14 @@ html {
 }
 
 .btn {
-  width: 400px;
+  width: 100px;
   color: $color-light;
   background: $color-dark;
   border-radius: 10px;
-  padding: 0.6rem 1rem;;
+  padding: 0.7rem;
   text-decoration: none;
   border: 0;
+  text-align: center;
 }
 
 img {
@@ -48,17 +61,19 @@ img {
 
 .container {
   display: grid;
-  grid-gap: 10px;
+  /* grid-gap: 10px; */
 }
 
+/**** Header ****/
 .header-nav {
-  background: $color-medium;
+  background: $color-medium; 
+  
   ul {
     display: grid;
-    grid-gap: 10%;
+    grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     list-style: none;
-    
+  
     a {
       color: $color-dark;
       text-decoration: none;
@@ -76,5 +91,73 @@ img {
   }
 }
 
+/**** Section-One  ****/
+.section-one {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "header-one header-one header-one box-a" 
+    "header-one header-one header-one box-b";
+
+  .header-one {
+    grid-area: header-one;
+    min-height: 400px;
+    /* background: url("../images/main.jpg"); */
+    background-image: linear-gradient( 
+        rgba($color-light, 0.5), 
+        rgba($color-dark, 0.5),  
+        ), url('../images/main.jpg');  
+    background-size: cover;
+    background-position: bottom; 
+    padding: 1.6rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* horizontally */
+    justify-content: center; /*vertically */
+    
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1px;
+      color: $color-light;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.6rem;
+      color: $color-light;
+    }
+
+    .btn {
+      margin-top: 10px;
+    }
+  }
+
+  .box-a {
+    grid-area: box-a;
+    @extend %boxes;
+    
+  }
+
+  .box-b {
+    grid-area: box-b;
+    @extend %boxes;
+    
+  }
+}
+
+/**** Section-Two ****/
+.section-two {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  max-height: 200px;
+}
+
+.box {
+  background: $color-light;
+  margin-top: 10px;
+  @extend %boxes;
+}
 
 

@@ -1,3 +1,14 @@
+.section-one .box-a, .section-one .box-b, .box {
+  background: #FFFDF2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2rem; }
+  .section-one .box-a *, .section-one .box-b *, .box * {
+    /* wildcard */
+    margin-bottom: 20px; }
+
 *,
 *::after,
 *::before {
@@ -6,41 +17,43 @@
   box-sizing: inherit; }
 
 html {
-  /* This is the root selector */
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /* root is 10px = 1rem */ }
   html body {
     box-sizing: border-box;
-    background: #FFFDF2;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     margin: 10px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    background: #B1ABB4; }
 
 .font {
   font-size: 3rem;
   color: #393418; }
 
 .btn {
-  width: 400px;
+  width: 100px;
   color: #FFFDF2;
   background: #393418;
   border-radius: 10px;
-  padding: 0.6rem 1rem;
+  padding: 0.7rem;
   text-decoration: none;
-  border: 0; }
+  border: 0;
+  text-align: center; }
 
 img {
   max-width: 100%; }
 
 .container {
   display: grid;
-  grid-gap: 10px; }
+  /* grid-gap: 10px; */ }
 
+/**** Header ****/
 .header-nav {
   background: #B1ABB4; }
   .header-nav ul {
     display: grid;
-    grid-gap: 10%;
+    grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     list-style: none; }
     .header-nav ul a {
@@ -54,3 +67,48 @@ img {
       .header-nav ul a:hover {
         color: #FFFDF2;
         transition: 0.5s; }
+
+/**** Section-One  ****/
+.section-one {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "header-one header-one header-one box-a"  "header-one header-one header-one box-b"; }
+  .section-one .header-one {
+    grid-area: header-one;
+    min-height: 400px;
+    /* background: url("../images/main.jpg"); */
+    background-image: linear-gradient(rgba(255, 253, 242, 0.5), rgba(57, 52, 24, 0.5)), url("../images/main.jpg");
+    background-size: cover;
+    background-position: bottom;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* horizontally */
+    justify-content: center;
+    /*vertically */ }
+    .section-one .header-one h1 {
+      font-size: 4rem;
+      margin-bottom: 1px;
+      color: #FFFDF2; }
+    .section-one .header-one p {
+      text-align: center;
+      font-size: 1.6rem;
+      color: #FFFDF2; }
+    .section-one .header-one .btn {
+      margin-top: 10px; }
+  .section-one .box-a {
+    grid-area: box-a; }
+  .section-one .box-b {
+    grid-area: box-b; }
+
+/**** Section-Two ****/
+.section-two {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  max-height: 200px; }
+
+.box {
+  background: #FFFDF2;
+  margin-top: 10px; }
