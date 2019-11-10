@@ -8,7 +8,49 @@
 html {
   /* This is the root selector */
   font-size: 62.5%; }
+  html body {
+    box-sizing: border-box;
+    background: #FFFDF2;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    margin: 10px;
+    line-height: 1.5; }
 
-body {
-  box-sizing: border-box;
-  background: black; }
+.font {
+  font-size: 3rem;
+  color: #393418; }
+
+.btn {
+  width: 400px;
+  color: #FFFDF2;
+  background: #393418;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  border: 0; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  display: grid;
+  grid-gap: 10px; }
+
+.header-nav {
+  background: #B1ABB4; }
+  .header-nav ul {
+    display: grid;
+    grid-gap: 10%;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none; }
+    .header-nav ul a {
+      color: #393418;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      text-align: center;
+      display: block;
+      padding: 1rem; }
+      .header-nav ul a:hover {
+        color: #FFFDF2;
+        transition: 0.5s; }

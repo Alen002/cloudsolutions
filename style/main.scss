@@ -1,4 +1,10 @@
-$color-background: lightblue;
+// Variables
+$color-light: #FFFDF2;
+$color-medium: #B1ABB4;
+$color-dark: #393418;
+$shadow: 0 1px 5px rgba(76, 76, 76, 0.7);
+
+$font-style: 'Roboto', sans-serif;
 
 *,
 *::after,
@@ -9,9 +15,66 @@ $color-background: lightblue;
 
 html {
   /* This is the root selector */
-  font-size: 62.5%; }
+  font-size: 62.5%; 
 
-body {
-  box-sizing: border-box;
-  background: $color-background;
- }
+  body {
+    box-sizing: border-box;
+    background: $color-light;
+    font-family: $font-style;
+    font-size: 1rem;
+    margin: 10px;
+    line-height: 1.5;
+   }
+}
+
+.font {
+  font-size: 3rem;
+  color: $color-dark;
+}
+
+.btn {
+  width: 400px;
+  color: $color-light;
+  background: $color-dark;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;;
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.header-nav {
+  background: $color-medium;
+  ul {
+    display: grid;
+    grid-gap: 10%;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    
+    a {
+      color: $color-dark;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      text-align: center;
+      display: block;
+      padding: 1rem;
+
+      &:hover {
+        color: $color-light;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+
+
