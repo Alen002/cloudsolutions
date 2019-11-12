@@ -14,8 +14,33 @@ $font-style: 'Roboto', sans-serif;
   justify-content: center;
   line-height: 2rem;
   * { /* wildcard */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
+}
+
+%headline {
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1px;
+    color: $color-light;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.6rem;
+    color: $color-light;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+%flex-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontally */
+  justify-content: center; /*vertically */
 }
 
 
@@ -44,15 +69,23 @@ html {
   color: $color-dark;
 }
 
-.btn {
-  width: 100px;
+button {
+  width: 90px;
+  height: 30px;
+  font-size: 1.2rem;
   color: $color-light;
   background: $color-dark;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 0.7rem;
   text-decoration: none;
   border: 0;
   text-align: center;
+}
+
+.button-effect:hover {
+  background: $color-medium;
+  transition-duration: 0.5s;
+  /* transform: scale(1.2); */
 }
 
 img {
@@ -65,9 +98,11 @@ img {
 }
 
 /**** Header ****/
-.header-nav {
-  background: $color-medium; 
-  
+nav {
+  background: $color-light; 
+  margin-bottom: 10px;
+  border-top: solid 1px $color-medium;
+  border-bottom: solid 1px $color-medium;
   ul {
     display: grid;
     grid-gap: 10px;
@@ -82,9 +117,10 @@ img {
       text-align: center;
       display: block;
       padding: 1rem;
+      font-size: 1.6rem;
 
       &:hover {
-        color: $color-light;
+        color: $color-medium;
         transition: 0.5s;
       }
     }
@@ -95,54 +131,35 @@ img {
 .section-one {
   display: grid;
   grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-areas: 
-    "header-one header-one header-one box-a" 
+    "header-one header-one  header-one box-a" 
     "header-one header-one header-one box-b";
 
   .header-one {
     grid-area: header-one;
+    letter-spacing: 2px;
     min-height: 400px;
-    /* background: url("../images/main.jpg"); */
     background-image: linear-gradient( 
-        rgba($color-light, 0.5), 
+        rgba($color-light, 0.2), 
         rgba($color-dark, 0.5),  
         ), url('../images/main.jpg');  
     background-size: cover;
     background-position: bottom; 
     padding: 1.6rem; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* horizontally */
-    justify-content: center; /*vertically */
+    @extend %flex-display;
+    @extend %headline;
     
-
-    h1 {
-      font-size: 4rem;
-      margin-bottom: 1px;
-      color: $color-light;
-    }
-
-    p {
-      text-align: center;
-      font-size: 1.6rem;
-      color: $color-light;
-    }
-
-    .btn {
-      margin-top: 10px;
-    }
   }
 
   .box-a {
     grid-area: box-a;
-    @extend %boxes;
-    
+    @extend %boxes;  
   }
 
   .box-b {
     grid-area: box-b;
-    @extend %boxes;
-    
+    @extend %boxes; 
   }
 }
 
@@ -150,14 +167,39 @@ img {
 .section-two {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  max-height: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .box {
   background: $color-light;
   margin-top: 10px;
+  padding: 20px;
   @extend %boxes;
 }
 
+/**** Section-Three ****/
+.section-three {
+  background-image: linear-gradient( 
+        rgba($color-light, 0.2), 
+        rgba($color-dark, 0.4),  
+        ), url('../images/contact.jpg');  
+  /* background: url('../images/contact.jpg'); */
+  background-size: cover;  
+  background-position: center;
+  min-height: 400px;
+  color: white;
+  @extend %flex-display;
+  @extend %headline;
+
+}
+
+/**** Section-Four the three images horizontally ****/
+.section-four {
+  display: flex;
+  flex-direction: row;
+
+  
+  
+  
+}
 
