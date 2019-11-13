@@ -4,10 +4,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  line-height: 2rem; }
+  line-height: 2rem;
+  font-size: 1.5rem;
+  text-align: center; }
   .section-one .box-a *, .section-one .box-b *, .box * {
     /* wildcard */
     margin-bottom: 10px; }
+
+.price {
+  font-size: 1.6rem; }
 
 .section-one .header-one h1, .section-three h1 {
   font-size: 4rem;
@@ -46,7 +51,7 @@ html {
     font-size: 1rem;
     margin: 10px;
     line-height: 1.5;
-    background: #B1ABB4; }
+    background: #FFFDF2; }
 
 .font {
   font-size: 3rem;
@@ -114,11 +119,14 @@ nav {
     background-image: linear-gradient(rgba(255, 253, 242, 0.2), rgba(57, 52, 24, 0.5)), url("../images/main.jpg");
     background-size: cover;
     background-position: bottom;
-    padding: 1.6rem; }
+    padding: 1.6rem;
+    border-radius: 20px; }
   .section-one .box-a {
-    grid-area: box-a; }
+    grid-area: box-a;
+    border-bottom: solid 1px #B1ABB4; }
   .section-one .box-b {
-    grid-area: box-b; }
+    grid-area: box-b;
+    border-bottom: solid 1px #B1ABB4; }
 
 /**** Section-Two Four horizontal boxes with icons displayed within ****/
 .section-two {
@@ -139,8 +147,10 @@ nav {
   grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr); }
   .section-three div {
-    background: #B1ABB4;
-    text-align: cen ter; }
+    background: #FFFDF2;
+    text-align: center; }
+    .section-three div h1 {
+      color: #393418; }
 
 /**** Section-Four display three images horizontally ****/
 .section-four {
@@ -152,8 +162,10 @@ nav {
 
 /**** Footer ****/
 footer {
-  color: #393418;
-  background: #FFFDF2;
+  color: #FFFDF2;
+  background: #121212;
+  border-top: solid 1px #B1ABB4;
+  border-bottom: solid 1px #B1ABB4;
   margin-top: 10px;
   padding: 1.2rem;
   font-size: 1.6rem;
@@ -178,6 +190,8 @@ footer {
     padding: 0.5rem; } }
 
 @media (max-width: 500px) {
+  .box {
+    border-bottom: solid 1px #B1ABB4; }
   .section-one {
     text-align: center;
     display: grid;
@@ -194,4 +208,15 @@ footer {
   .section-two {
     margin-bottom: 20px; }
   .section-three {
-    text-align: center; } }
+    height: 400px;
+    line-height: 3rem;
+    text-align: center;
+    border-bottom: solid 1px #B1ABB4;
+    margin-bottom: 20px; } }
+
+@media (min-width: 701px) {
+  .section-two {
+    border-bottom: solid 1px #B1ABB4; }
+  .section-three {
+    padding: 10px;
+    border-bottom: solid 1px #B1ABB4; } }
