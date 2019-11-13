@@ -22,7 +22,7 @@
 .section-one .header-one .btn, .section-three .btn {
   margin-top: 10px; }
 
-.section-one .header-one, .section-three {
+.section-one .header-one {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,16 +128,17 @@ nav {
 .box {
   background: #FFFDF2;
   margin-top: 10px;
-  padding: 20px; }
+  padding: 20px;
+  margin-bottom: 10px; }
 
 /**** Section-Three ****/
 .section-three {
-  background-image: linear-gradient(rgba(255, 253, 242, 0.2), rgba(57, 52, 24, 0.4)), url("../images/contact.jpg");
   /* background: url('../images/contact.jpg'); */
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
-  color: white; }
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr); }
+  .section-three div {
+    background: #B1ABB4; }
 
 /**** Section-Four the three images horizontally ****/
 .section-four {
