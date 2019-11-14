@@ -185,7 +185,13 @@ footer {
   .toggle-nav .nav-menu {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    animation: 1.2s menuShow; }
+  @keyframes menuShow {
+    from {
+      max-height: 0px; }
+    to {
+      max-height: 250px; } }
   .section-three {
     justify-content: center;
     grid-template-columns: 1fr; }
@@ -195,7 +201,11 @@ footer {
     .section-three .box {
       text-align: center; }
   footer {
-    padding: 0.5rem; } }
+    padding: 0.5rem; }
+  .section-four {
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: 1fr; } }
 
 @media (max-width: 500px) {
   .box {
