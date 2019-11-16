@@ -62,6 +62,7 @@ $font-style: 'Roboto', sans-serif;
   box-sizing: inherit; }
 
 html {
+  animation: 2s fadein;
   font-size: 62.5%; /* root is 10px = 1rem */
 
   body {
@@ -110,6 +111,9 @@ button {
 
 /**** Header ****/
 nav {
+  width: 100%;
+  
+  margin-top: -10px;
   background: $color-light; 
   margin-bottom: 10px;
   border-top: solid 1px $color-medium;
@@ -140,6 +144,7 @@ nav {
 
 /**** Section-One Cloud Solutions ****/
 .section-one {
+  margin-top: 50px;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
@@ -218,6 +223,8 @@ nav {
   /* grid-template-columns: repeat(3, 1fr); */
 }
 
+
+
 /**** Footer ****/
 footer {
   color: $color-light;
@@ -229,6 +236,15 @@ footer {
   font-size: 1.6rem;
   text-align: center;
 }
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+
+
 
 /**** Media Queries ****/
 @media(max-width: 700px) {   /* only up to 700px or less*/
@@ -321,7 +337,10 @@ footer {
 
 }
 
-@media (min-width: 701px) {
+@media (min-width: 701px) {  /* More than 700px */
+  nav {
+    position: fixed;
+  }
   .mobile-menu {
     display: none;
   }
