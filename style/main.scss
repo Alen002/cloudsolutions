@@ -253,15 +253,28 @@ footer {
  }
 
  .nav-menu {
-   display: none;
- }
-  
- .toggle-nav .nav-menu { 
-    display: grid;
+   max-height: 250px;
+   display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr; 
+ }
+
+ .mobile-menu {
+   /* display: none; */
+   overflow: hidden;
+   transition: 1.2s linear;
+   max-height: 0;
+ }
+
+ .mobile-menu.toggle-nav { /* two classes in the same element. Then it only applies */
+   max-height: 250px;
+ }
+  
+ /* .toggle-nav .nav-menu { 
+    transition: 1.2s linear;
+    max-height: 250px;
     animation: 1.2s menuShow;
-}  
+}   */
 
 @keyframes menuShow {
   from {max-height: 0px;
