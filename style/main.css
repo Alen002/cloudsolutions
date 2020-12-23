@@ -239,7 +239,7 @@ nav ul a:hover {
 }
 
 /**** Footer ****/
-footer {
+#footer {
   color: #FFFDF2;
   border-top: solid 1px #B1ABB4;
   border-bottom: solid 1px #B1ABB4;
@@ -249,6 +249,7 @@ footer {
   text-align: center;
 }
 
+/**** End of Footer ****/
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
@@ -257,134 +258,12 @@ footer {
     opacity: 1;
   }
 }
-
 @keyframes fadein {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-
-/**** Media Queries ****/
-@media (max-width: 700px) {
-  /* only up to 700px or less*/
-  .desktop-menu {
-    display: none;
-  }
-  .nav-menu {
-    max-height: 250px;
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 10px;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .mobile-menu {
-    overflow: hidden;
-    -webkit-transition: 1.2s linear;
-    transition: 1.2s linear;
-    max-height: 0;
-  }
-  .mobile-menu.toggle-nav {
-    /* two classes in the same element. Then it only applies */
-    max-height: 250px;
-  }
-  @-webkit-keyframes menuShow {
-    from {
-      max-height: 0px;
-    }
-    to {
-      max-height: 250px;
-    }
-  }
-  @keyframes menuShow {
-    from {
-      max-height: 0px;
-    }
-    to {
-      max-height: 250px;
-    }
-  }
-  .section-three {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .section-three h1 {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-  .section-three .box {
-    text-align: center;
-  }
-  footer {
-    padding: 0.5rem;
-  }
-  .section-four {
-    display: -ms-grid;
-    display: grid;
-    border-radius: 10px;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 500px) {
-  .box {
-    border-bottom: solid 1px #B1ABB4;
-  }
-  .section-one {
-    text-align: center;
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 20px;
-    margin-top: 10px;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "header-one" "box-a" "box-b";
-  }
-  .section-one .box-a, .section-one .box-b {
-    height: 150px;
-  }
-  .section-one .box-a {
-    margin-bottom: 10px;
-  }
-  .section-one .box-b {
-    margin-bottom: 20px;
-  }
-  .section-two {
-    margin-bottom: 20px;
-  }
-  .section-three {
-    height: 400px;
-    line-height: 3rem;
-    text-align: center;
-    border-bottom: solid 1px #B1ABB4;
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 701px) {
-  /* More than 700px */
-  nav {
-    position: fixed;
-  }
-  .mobile-menu {
-    display: none;
-  }
-  .hamburger-icon {
-    display: none;
-  }
-  .section-two {
-    border-bottom: solid 1px #B1ABB4;
-  }
-  .section-three {
-    padding: 10px;
-    border-bottom: solid 1px #B1ABB4;
   }
 }
 /*# sourceMappingURL=main.css.map */
