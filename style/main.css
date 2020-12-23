@@ -142,14 +142,11 @@ nav ul a {
   color: #393418;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.2rem;
-  display: block;
-  padding: 1rem;
   font-size: 1.6rem;
 }
 
 nav ul a:hover {
-  color: #B1ABB4;
+  color: #393418;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -286,7 +283,6 @@ footer {
         grid-template-columns: 1fr;
   }
   .mobile-menu {
-    /* display: none; */
     overflow: hidden;
     -webkit-transition: 1.2s linear;
     transition: 1.2s linear;
@@ -296,11 +292,6 @@ footer {
     /* two classes in the same element. Then it only applies */
     max-height: 250px;
   }
-  /* .toggle-nav .nav-menu { 
-    transition: 1.2s linear;
-    max-height: 250px;
-    animation: 1.2s menuShow;
-}   */
   @-webkit-keyframes menuShow {
     from {
       max-height: 0px;

@@ -124,18 +124,15 @@ nav {
       color: $color-dark;
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 1.2rem;
-      display: block;
-      padding: 1rem;
       font-size: 1.6rem;
 
       &:hover {
-        color: $color-medium;
+        color: $color-dark;
         transition: 0.5s;
       }
     }
   }
-}
+} 
 
 /**** Section-One Cloud Solutions ****/
 .section-one {
@@ -223,7 +220,7 @@ nav {
 /**** Footer ****/
 footer {
   color: $color-light;
-  background: #121212;
+  background: 
   border-top: solid 1px $color-medium;
   border-bottom: solid 1px $color-medium;
   margin-top: 10px;
@@ -255,7 +252,6 @@ footer {
  }
 
  .mobile-menu {
-   /* display: none; */
    overflow: hidden;
    transition: 1.2s linear;
    max-height: 0;
@@ -264,12 +260,6 @@ footer {
  .mobile-menu.toggle-nav { /* two classes in the same element. Then it only applies */
    max-height: 250px;
  }
-  
- /* .toggle-nav .nav-menu { 
-    transition: 1.2s linear;
-    max-height: 250px;
-    animation: 1.2s menuShow;
-}   */
 
 @keyframes menuShow {
   from {max-height: 0px;
