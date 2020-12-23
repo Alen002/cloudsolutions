@@ -62,7 +62,7 @@ $font-style: 'Roboto', sans-serif;
   box-sizing: inherit; }
 
 html {
-  animation: 2s fadein;
+  animation: 1s fadein;
   font-size: 62.5%; /* root is 10px = 1rem */
 
   body {
@@ -71,7 +71,9 @@ html {
     font-size: 1rem;
     margin: 10px;
     line-height: 1.5;
-    background: $color-light;
+    background: white;
+    
+    
    }
 }
 
@@ -112,24 +114,17 @@ button {
 /**** Header ****/
 nav {
   width: 100%;
-  
   margin-top: -10px;
-  background: $color-light; 
   margin-bottom: 10px;
   border-top: solid 1px $color-medium;
   border-bottom: solid 1px $color-medium;
+  text-align: center;
   ul {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    list-style: none;
-  
     a {
       color: $color-dark;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 1.2rem;
-      text-align: center;
       display: block;
       padding: 1rem;
       font-size: 1.6rem;
