@@ -20,6 +20,10 @@ $font-style: 'Roboto', sans-serif;
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 .hamburger-icon {
   text-align: right;
   font-size: 2.0rem;
@@ -71,20 +75,13 @@ html {
     font-size: 1rem;
     margin: 10px;
     line-height: 1.5;
-    background: white;
-    
-    
+    background: white;   
    }
 }
 
 .font {
   font-size: 3rem;
   color: $color-dark;
-}
-
-img {
-  border-radius: 20px;
-  max-width: 100%;
 }
 
 button {
@@ -111,6 +108,8 @@ button {
   /* grid-gap: 10px; */
 }
 
+/***** Start of Main Components of the Webpage ****/
+
 /**** Header ****/
 nav {
   width: 100%;
@@ -134,24 +133,21 @@ nav {
   }
 } 
 
-/**** Section-One Cloud Solutions ****/
+/**** Section One ****/
 .section-one {
-  margin-top: 50px;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: 
-    "header-one header-one header-one box-a" 
-    "header-one header-one header-one box-b";
+  background-color: green;
+  min-height: 70vh;
+  @extend .text-center;
 
   .header-one {
-    grid-area: header-one;
-    letter-spacing: 2px;
-    min-height: 400px;
+    letter-spacing: 3px;
+    min-height: 70vh;
+    
     background-image: linear-gradient( 
-        rgba($color-light, 0.2), 
-        rgba($color-dark, 0.5),  
-        ), url('../images/main.jpg');  
+      rgba($color-light, 0.2), 
+      rgba($color-dark, 1.5),  
+    ), url('../images/main.jpg');  
+    
     background-size: cover;
     background-position: bottom; 
     padding: 1.6rem; 
@@ -160,65 +156,7 @@ nav {
     border-radius: 20px;
   }
 
-  .box-a {
-    grid-area: box-a;
-    @extend %boxes; 
-    border-bottom: solid 1px $color-medium;
-  }
-
-  .box-b {
-    grid-area: box-b;
-    @extend %boxes; 
-    border-bottom: solid 1px $color-medium;
-  }
 }
-
-
-
-
-/**** Section-Two Four horizontal boxes with icons displayed within ****/
-.section-two {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-}
-
-.box {
-  background: $color-light;
-  margin-top: 10px;
-  padding: 20px;
-  margin-bottom: 10px;
-  @extend %boxes;
-}
-
-/**** Section-Three Get in Contact ****/
-.section-three {
-  /* background: url('../images/contact.jpg'); */
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  @extend %headline;
-  
-  div {
-    background: $color-light;
-    text-align: center;
-
-    h1 {
-      color: $color-dark;
-    }
-  } 
-}
-
-/**** Section-Four display three images horizontally ****/
-.section-four {
-  display: grid;
-  grid-gap: 20px;
-  margin-top: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  /* grid-template-columns: repeat(3, 1fr); */
-}
-
-
 
 /**** Footer ****/
 #footer {

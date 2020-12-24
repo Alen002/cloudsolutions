@@ -1,26 +1,5 @@
-.section-one .box-a, .section-one .box-b, .box {
-  background: #FFFDF2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  line-height: 2rem;
-  font-size: 1.5rem;
+.text-center, .section-one {
   text-align: center;
-}
-
-.section-one .box-a *, .section-one .box-b *, .box * {
-  /* wildcard */
-  margin-bottom: 10px;
 }
 
 .hamburger-icon {
@@ -32,19 +11,19 @@
   font-size: 1.6rem;
 }
 
-.section-one .header-one h1, .section-three h1 {
+.section-one .header-one h1 {
   font-size: 4rem;
   margin-bottom: 1px;
   color: #FFFDF2;
 }
 
-.section-one .header-one p, .section-three p {
+.section-one .header-one p {
   text-align: center;
   font-size: 1.6rem;
   color: #FFFDF2;
 }
 
-.section-one .header-one .btn, .section-three .btn {
+.section-one .header-one .btn {
   margin-top: 10px;
 }
 
@@ -97,11 +76,6 @@ html body {
   color: #393418;
 }
 
-img {
-  border-radius: 20px;
-  max-width: 100%;
-}
-
 button {
   width: 90px;
   height: 30px;
@@ -128,6 +102,7 @@ button {
   /* grid-gap: 10px; */
 }
 
+/***** Start of Main Components of the Webpage ****/
 /**** Header ****/
 nav {
   width: 100%;
@@ -151,91 +126,21 @@ nav ul a:hover {
   transition: 0.5s;
 }
 
-/**** Section-One Cloud Solutions ****/
+/**** Section One ****/
 .section-one {
-  margin-top: 50px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10px;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-areas: "header-one header-one header-one box-a"  "header-one header-one header-one box-b";
+  background-color: green;
+  min-height: 70vh;
 }
 
 .section-one .header-one {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: header-one;
-  letter-spacing: 2px;
-  min-height: 400px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 242, 0.2)), to(rgba(57, 52, 24, 0.5))), url("../images/main.jpg");
-  background-image: linear-gradient(rgba(255, 253, 242, 0.2), rgba(57, 52, 24, 0.5)), url("../images/main.jpg");
+  letter-spacing: 3px;
+  min-height: 70vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 242, 0.2)), to(#393418)), url("../images/main.jpg");
+  background-image: linear-gradient(rgba(255, 253, 242, 0.2), #393418), url("../images/main.jpg");
   background-size: cover;
   background-position: bottom;
   padding: 1.6rem;
   border-radius: 20px;
-}
-
-.section-one .box-a {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: box-a;
-  border-bottom: solid 1px #B1ABB4;
-}
-
-.section-one .box-b {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  grid-area: box-b;
-  border-bottom: solid 1px #B1ABB4;
-}
-
-/**** Section-Two Four horizontal boxes with icons displayed within ****/
-.section-two {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10px;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.box {
-  background: #FFFDF2;
-  margin-top: 10px;
-  padding: 20px;
-  margin-bottom: 10px;
-}
-
-/**** Section-Three Get in Contact ****/
-.section-three {
-  /* background: url('../images/contact.jpg'); */
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.section-three div {
-  background: #FFFDF2;
-  text-align: center;
-}
-
-.section-three div h1 {
-  color: #393418;
-}
-
-/**** Section-Four display three images horizontally ****/
-.section-four {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  margin-top: 10px;
-  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  /* grid-template-columns: repeat(3, 1fr); */
 }
 
 /**** Footer ****/
