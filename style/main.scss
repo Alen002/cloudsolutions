@@ -6,31 +6,16 @@ $shadow: 0 1px 5px rgba(76, 76, 76, 0.7);
 
 $font-style: 'Roboto', sans-serif;
 
-%boxes {
-  background: $color-light;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  line-height: 2rem;
-  font-size: 1.5rem;
-  text-align: center;
-  * { /* wildcard */
-    margin-bottom: 10px;
-  }
-}
-
 .text-center {
   text-align: center;
 }
 
-.hamburger-icon {
-  text-align: right;
-  font-size: 2.0rem;
+.blue {
+  background-color: blue;
 }
 
-.price {
-  font-size: 1.6rem;
+.yellow {
+  background-color: yellow;
 }
 
 %headline {
@@ -51,12 +36,7 @@ $font-style: 'Roboto', sans-serif;
   }
 }
 
-%flex-display {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* horizontally */
-  justify-content: center; /*vertically */
-}
+
 
 *,
 *::after,
@@ -90,7 +70,7 @@ button {
   font-size: 1.2rem;
   color: $color-light;
   background: $color-dark;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 0.7rem;
   text-decoration: none;
   border: 0;
@@ -101,11 +81,6 @@ button {
   background: $color-medium;
   transition-duration: 0.5s;
   /* transform: scale(1.2); */
-}
-
-.container {
-  display: grid;
-  /* grid-gap: 10px; */
 }
 
 /***** Start of Main Components of the Webpage ****/
@@ -133,29 +108,56 @@ nav {
   }
 } 
 
-/**** Section One ****/
+.section-one-first {
+  background-color: blue;
+  align-items: center;
+  min-height: 50vh;
+    
+}
+
+.section-one-second {
+  background-color: green; 
+}
+
 .section-one {
-  background-color: green;
-  min-height: 70vh;
+  background-color: red;
+  .row {
+    min-height: 35vh;
+  }  
+}
+
+.section-two {
+  background-color: red;
+ 
+}  
+
+
+/**** Section One ****/
+/* .section-one {
+  background-color: black;
+  
   @extend .text-center;
 
   .header-one {
     letter-spacing: 3px;
-    min-height: 70vh;
+   
+    
     
     background-image: linear-gradient( 
       rgba($color-light, 0.2), 
-      rgba($color-dark, 1.5),  
-    ), url('../images/main.jpg');  
+      rgba($color-dark, 1.5),
+    ), 
+    url('../images/main.jpg');  
     
     background-size: cover;
     background-position: bottom; 
     padding: 1.6rem; 
-    @extend %flex-display;
-    @extend %headline;
-    border-radius: 20px;
+    border-radius: 10px;
   }
+} */
 
+.test {
+  min-height: 70vh; 
 }
 
 /**** Footer ****/
@@ -168,7 +170,6 @@ nav {
   font-size: 1.6rem;
   text-align: center;
 }
-
 /**** End of Footer ****/
 
 @keyframes fadein {
