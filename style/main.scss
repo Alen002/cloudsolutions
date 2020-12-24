@@ -36,8 +36,6 @@ $font-style: 'Roboto', sans-serif;
   }
 }
 
-
-
 *,
 *::after,
 *::before {
@@ -87,12 +85,14 @@ button {
 
 /**** Header ****/
 nav {
+  
   width: 100%;
   margin-top: -10px;
   margin-bottom: 10px;
   border-top: solid 1px $color-medium;
   border-bottom: solid 1px $color-medium;
   text-align: center;
+  background-color: WHITE;
   ul {
     a {
       color: $color-dark;
@@ -112,6 +112,10 @@ nav {
   .row {
     min-height: 35vh;
   } 
+  .text-center {
+    color: white;
+    font-size: 4rem;
+  }
 }
 
 .section-one-first {
@@ -119,11 +123,11 @@ nav {
   align-items: center;
   min-height: 50vh;
   
-  letter-spacing: 5px;
+  letter-spacing: 3px;
      
   background-image: linear-gradient( 
-    rgba($color-light, 0.2), 
-    rgba($color-dark, 1.5),
+    rgba($color-light, 0.5), 
+    rgba($color-dark, 1.0),
   ), 
   url('../images/main.jpg');    
   background-size: cover;
@@ -189,3 +193,5 @@ nav {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+
+
