@@ -108,23 +108,36 @@ nav {
   }
 } 
 
+.section-one {
+  .row {
+    min-height: 35vh;
+  } 
+}
+
 .section-one-first {
   background-color: blue;
   align-items: center;
   min-height: 50vh;
-    
+  
+  letter-spacing: 5px;
+     
+  background-image: linear-gradient( 
+    rgba($color-light, 0.2), 
+    rgba($color-dark, 1.5),
+  ), 
+  url('../images/main.jpg');    
+  background-size: cover;
+  background-position: bottom; 
+  padding: 1.6rem; 
+  border-radius: 10px;    
+
 }
 
 .section-one-second {
   background-color: green; 
 }
 
-.section-one {
-  background-color: red;
-  .row {
-    min-height: 35vh;
-  }  
-}
+
 
 .section-two {
   background-color: red;

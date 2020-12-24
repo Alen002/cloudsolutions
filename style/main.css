@@ -85,24 +85,27 @@ nav ul a:hover {
   transition: 0.5s;
 }
 
+.section-one .row {
+  min-height: 35vh;
+}
+
 .section-one-first {
   background-color: blue;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   min-height: 50vh;
+  letter-spacing: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 242, 0.2)), to(#393418)), url("../images/main.jpg");
+  background-image: linear-gradient(rgba(255, 253, 242, 0.2), #393418), url("../images/main.jpg");
+  background-size: cover;
+  background-position: bottom;
+  padding: 1.6rem;
+  border-radius: 10px;
 }
 
 .section-one-second {
   background-color: green;
-}
-
-.section-one {
-  background-color: red;
-}
-
-.section-one .row {
-  min-height: 35vh;
 }
 
 .section-two {
