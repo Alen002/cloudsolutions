@@ -10,32 +10,6 @@ $font-style: 'Roboto', sans-serif;
   text-align: center;
 }
 
-.blue {
-  background-color: blue;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-%headline {
-  h1 {
-    font-size: 4rem;
-    margin-bottom: 1px;
-    color: $color-light;
-  }
-
-  p {
-    text-align: center;
-    font-size: 1.6rem;
-    color: $color-light;
-  }
-
-  .btn {
-    margin-top: 10px;
-  }
-}
-
 *,
 *::after,
 *::before {
@@ -62,48 +36,28 @@ html {
   color: $color-dark;
 }
 
-button {
-  width: 90px;
-  height: 30px;
-  font-size: 1.2rem;
-  color: $color-light;
-  background: $color-dark;
-  border-radius: 10px;
-  padding: 0.7rem;
-  text-decoration: none;
-  border: 0;
-  text-align: center;
-}
-
-.button-effect:hover {
-  background: $color-medium;
-  transition-duration: 0.5s;
-  /* transform: scale(1.2); */
+.btn {
+  border-radius: 20px;
+  font-size: 1.5rem;
+  background-color: black;
+  border-style: none;
+  padding: 10px;
 }
 
 /***** Start of Main Components of the Webpage ****/
 
 /**** Header ****/
-nav {
-  
+nav { 
   width: 100%;
-  margin-top: -10px;
-  margin-bottom: 10px;
-  border-top: solid 1px $color-medium;
-  border-bottom: solid 1px $color-medium;
+  margin-top: 0px;
   text-align: center;
-  background-color: WHITE;
+  
   ul {
     a {
-      color: $color-dark;
+      color: $color-dark !important;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 1.6rem;
-
-      &:hover {
-        color: $color-dark;
-        transition: 0.5s;
-      }
     }
   }
 } 
@@ -119,10 +73,8 @@ nav {
 }
 
 .section-one-first {
-  background-color: blue;
   align-items: center;
   min-height: 50vh;
-  
   letter-spacing: 3px;
      
   background-image: linear-gradient( 
@@ -138,44 +90,15 @@ nav {
 }
 
 .section-one-second {
-  background-color: green; 
+  color: $color-dark;
 }
+
 
 
 
 .section-two {
   background-color: red;
- 
 }  
-
-
-/**** Section One ****/
-/* .section-one {
-  background-color: black;
-  
-  @extend .text-center;
-
-  .header-one {
-    letter-spacing: 3px;
-   
-    
-    
-    background-image: linear-gradient( 
-      rgba($color-light, 0.2), 
-      rgba($color-dark, 1.5),
-    ), 
-    url('../images/main.jpg');  
-    
-    background-size: cover;
-    background-position: bottom; 
-    padding: 1.6rem; 
-    border-radius: 10px;
-  }
-} */
-
-.test {
-  min-height: 70vh; 
-}
 
 /**** Footer ****/
 #footer {
@@ -194,4 +117,5 @@ nav {
   to   { opacity: 1; }
 }
 
+/*********************************/
 

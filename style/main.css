@@ -2,14 +2,6 @@
   text-align: center;
 }
 
-.blue {
-  background-color: blue;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
 *,
 *::after,
 *::before {
@@ -41,49 +33,27 @@ html body {
   color: #393418;
 }
 
-button {
-  width: 90px;
-  height: 30px;
-  font-size: 1.2rem;
-  color: #FFFDF2;
-  background: #393418;
-  border-radius: 10px;
-  padding: 0.7rem;
-  text-decoration: none;
-  border: 0;
-  text-align: center;
-}
-
-.button-effect:hover {
-  background: #B1ABB4;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  /* transform: scale(1.2); */
+.btn {
+  border-radius: 20px;
+  font-size: 1.5rem;
+  background-color: black;
+  border-style: none;
+  padding: 10px;
 }
 
 /***** Start of Main Components of the Webpage ****/
 /**** Header ****/
 nav {
   width: 100%;
-  margin-top: -10px;
-  margin-bottom: 10px;
-  border-top: solid 1px #B1ABB4;
-  border-bottom: solid 1px #B1ABB4;
+  margin-top: 0px;
   text-align: center;
-  background-color: WHITE;
 }
 
 nav ul a {
-  color: #393418;
+  color: #393418 !important;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.6rem;
-}
-
-nav ul a:hover {
-  color: #393418;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .section-one .row {
@@ -96,7 +66,6 @@ nav ul a:hover {
 }
 
 .section-one-first {
-  background-color: blue;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -111,38 +80,11 @@ nav ul a:hover {
 }
 
 .section-one-second {
-  background-color: green;
+  color: #393418;
 }
 
 .section-two {
   background-color: red;
-}
-
-/**** Section One ****/
-/* .section-one {
-  background-color: black;
-  
-  @extend .text-center;
-
-  .header-one {
-    letter-spacing: 3px;
-   
-    
-    
-    background-image: linear-gradient( 
-      rgba($color-light, 0.2), 
-      rgba($color-dark, 1.5),
-    ), 
-    url('../images/main.jpg');  
-    
-    background-size: cover;
-    background-position: bottom; 
-    padding: 1.6rem; 
-    border-radius: 10px;
-  }
-} */
-.test {
-  min-height: 70vh;
 }
 
 /**** Footer ****/
@@ -173,4 +115,6 @@ nav ul a:hover {
     opacity: 1;
   }
 }
+
+/*********************************/
 /*# sourceMappingURL=main.css.map */
