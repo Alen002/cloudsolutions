@@ -1,7 +1,7 @@
 // Variables
 $color-light: #FFFDF2;
 $color-medium: #B1ABB4;
-$color-dark: #393418;
+$color-dark: #262626;
 $shadow: 0 1px 5px rgba(76, 76, 76, 0.7);
 $font-style: 'Roboto', sans-serif;
 
@@ -55,22 +55,20 @@ nav {
 /* End of navbar */
 
 /* Start of section one */
-.section-one {
-  .text-center {
-    color: $color-dark;
-    font-size: 2rem;
-  }
+
+.text-center {
+  color: $color-dark;
+  font-size: 2rem;
 }
 
 // Image of section one set to viewport 50vh
 .section-one-first {
   align-items: center;
   min-height: 50vh;
-  letter-spacing: 3px;
-     
+  letter-spacing: 2px; 
   background-image: linear-gradient( 
-    rgba($color-light, 0.5), 
-    rgba($color-dark, 1.0),
+    rgba($color-light, 0.1), 
+    rgba($color-dark, 2.0),
   ), 
   url('../images/main.jpg');    
   background-size: cover;

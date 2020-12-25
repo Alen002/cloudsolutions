@@ -26,7 +26,7 @@ html body {
 
 .font {
   font-size: 3rem;
-  color: #393418;
+  color: #262626;
 }
 
 .btn {
@@ -42,7 +42,7 @@ nav {
 }
 
 nav ul a {
-  color: #393418 !important;
+  color: #262626 !important;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -50,8 +50,8 @@ nav ul a {
 
 /* End of navbar */
 /* Start of section one */
-.section-one .text-center {
-  color: #393418;
+.text-center {
+  color: #262626;
   font-size: 2rem;
 }
 
@@ -60,9 +60,9 @@ nav ul a {
       -ms-flex-align: center;
           align-items: center;
   min-height: 50vh;
-  letter-spacing: 3px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 242, 0.5)), to(#393418)), url("../images/main.jpg");
-  background-image: linear-gradient(rgba(255, 253, 242, 0.5), #393418), url("../images/main.jpg");
+  letter-spacing: 2px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 242, 0.1)), to(#262626)), url("../images/main.jpg");
+  background-image: linear-gradient(rgba(255, 253, 242, 0.1), #262626), url("../images/main.jpg");
   background-size: cover;
   background-position: bottom;
   padding: 1.6rem;
@@ -88,7 +88,7 @@ nav ul a {
 /* End of section one */
 .section-two {
   font-size: 2rem;
-  color: #393418;
+  color: #262626;
 }
 
 .box:hover {
