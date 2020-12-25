@@ -31,12 +31,8 @@ html {
   color: $color-dark;
 }
 
-.btn {
-  border-radius: 20px;
-  font-size: 1.5rem;
-  background-color: black;
-  border-style: none;
-  padding: 10px;
+.btn {  
+  font-size: 1.5rem;  
 }
 
 /***** Start of main components of the webpage ****/
@@ -61,7 +57,7 @@ nav {
 /* Start of section one */
 .section-one {
   .text-center {
-    color: black;
+    color: $color-dark;
     font-size: 2rem;
   }
 }
@@ -94,7 +90,15 @@ nav {
 
 .section-two {
   font-size: 2rem;
+  color: $color-dark;
 }  
+
+.box:hover {
+/*   -webkit-transition: 0.9s ease;
+          transition: 0.9s ease;
+  border-bottom: 3px solid white; */
+  color: #0070FF;
+}
 
 /**** Footer ****/
 #footer {

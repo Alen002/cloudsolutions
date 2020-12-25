@@ -30,11 +30,7 @@ html body {
 }
 
 .btn {
-  border-radius: 20px;
   font-size: 1.5rem;
-  background-color: black;
-  border-style: none;
-  padding: 10px;
 }
 
 /***** Start of main components of the webpage ****/
@@ -55,7 +51,7 @@ nav ul a {
 /* End of navbar */
 /* Start of section one */
 .section-one .text-center {
-  color: black;
+  color: #393418;
   font-size: 2rem;
 }
 
@@ -92,6 +88,14 @@ nav ul a {
 /* End of section one */
 .section-two {
   font-size: 2rem;
+  color: #393418;
+}
+
+.box:hover {
+  /*   -webkit-transition: 0.9s ease;
+          transition: 0.9s ease;
+  border-bottom: 3px solid white; */
+  color: #0070FF;
 }
 
 /**** Footer ****/
