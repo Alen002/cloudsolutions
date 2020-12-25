@@ -60,9 +60,6 @@ nav {
 
 /* Start of section one */
 .section-one {
-  .row {
-    min-height: 35vh;
-  } 
   .text-center {
     color: black;
     font-size: 2rem;
@@ -83,12 +80,20 @@ nav {
   background-size: cover;
   background-position: bottom; 
   padding: 1.6rem; 
-  border-radius: 10px;    
+  border-radius: 5px;    
 }
 
 // Second column of section one with two subcolums set to viewport 25vh
 .section-one-second {
   min-height: 25vh;
+}
+
+.text-center {
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 /* End of section one */
 
