@@ -3,12 +3,7 @@ $color-light: #FFFDF2;
 $color-medium: #B1ABB4;
 $color-dark: #393418;
 $shadow: 0 1px 5px rgba(76, 76, 76, 0.7);
-
 $font-style: 'Roboto', sans-serif;
-
-.text-center {
-  text-align: center;
-}
 
 *,
 *::after,
@@ -44,12 +39,12 @@ html {
   padding: 10px;
 }
 
-/***** Start of Main Components of the Webpage ****/
+/***** Start of main components of the webpage ****/
 
-/**** Header ****/
+/* Start of navbar */
 nav { 
   width: 100%;
-  margin-top: 0px;
+  margin-top: 10px;
   text-align: center;
   
   ul {
@@ -61,17 +56,20 @@ nav {
     }
   }
 } 
+/* End of navbar */
 
+/* Start of section one */
 .section-one {
   .row {
     min-height: 35vh;
   } 
   .text-center {
-    color: white;
-    font-size: 4rem;
+    color: black;
+    font-size: 2rem;
   }
 }
 
+// Image of section one set to viewport 50vh
 .section-one-first {
   align-items: center;
   min-height: 50vh;
@@ -86,15 +84,13 @@ nav {
   background-position: bottom; 
   padding: 1.6rem; 
   border-radius: 10px;    
-
 }
 
+// Second column of section one with two subcolums set to viewport 25vh
 .section-one-second {
-  color: $color-dark;
+  min-height: 25vh;
 }
-
-
-
+/* End of section one */
 
 .section-two {
   background-color: red;
@@ -110,7 +106,7 @@ nav {
   font-size: 1.6rem;
   text-align: center;
 }
-/**** End of Footer ****/
+/**** End of footer ****/
 
 @keyframes fadein {
   from { opacity: 0; }
