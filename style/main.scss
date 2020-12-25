@@ -80,14 +80,9 @@ nav {
   background-size: cover;
   background-position: bottom; 
   padding: 1.6rem; 
-  border-radius: 5px;    
 }
 
 // Second column of section one with two subcolums set to viewport 25vh
-.section-one-second {
-  min-height: 25vh;
-}
-
 .text-center {
   min-height: 25vh;
   display: flex;
@@ -98,7 +93,7 @@ nav {
 /* End of section one */
 
 .section-two {
-  background-color: red;
+  font-size: 2rem;
 }  
 
 /**** Footer ****/

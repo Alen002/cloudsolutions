@@ -70,11 +70,6 @@ nav ul a {
   background-size: cover;
   background-position: bottom;
   padding: 1.6rem;
-  border-radius: 5px;
-}
-
-.section-one-second {
-  min-height: 25vh;
 }
 
 .text-center {
@@ -96,7 +91,7 @@ nav ul a {
 
 /* End of section one */
 .section-two {
-  background-color: red;
+  font-size: 2rem;
 }
 
 /**** Footer ****/
