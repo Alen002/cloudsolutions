@@ -25,7 +25,7 @@ var Particle = function () {
     this.vx = 0.5 * Math.random();
     this.vy = 0.5 * Math.random();
     this.Color = GetRandomColor();
-    this.r = 7 * Math.random();
+    this.r = 10 * Math.random();
 
 }
 

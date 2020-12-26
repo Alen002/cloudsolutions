@@ -54,6 +54,11 @@ nav ul a {
 }
 
 .section-one-first {
+  background-color: black;
+  min-height: 60vh;
+}
+
+.section-three {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -146,13 +151,13 @@ nav ul a {
   min-height: 80vh;
 }
 
-/* canvas {
- display:block;
-  max-height: 30%;
-  
-  position: relative;
-  
-} */
+canvas {
+  /* display:block; */
+  max-height: 100%;
+  width: auto;
+  position: absolute;
+}
+
 canvas {
   opacity: 0.5;
 }

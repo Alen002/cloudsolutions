@@ -58,8 +58,13 @@ nav {
   font-size: 2rem;
 }
 
-// Image of section one set to viewport 50vh
 .section-one-first {
+  background-color: black;
+  min-height: 60vh ;
+}
+
+// Image of section one set to viewport 50vh
+.section-three {
   align-items: center;
   min-height: 60vh;
   letter-spacing: 2px; 
@@ -136,13 +141,14 @@ nav {
 
 
 
-/* canvas {
- display:block;
-  max-height: 30%;
+canvas {
+ /* display:block; */
+  max-height: 100%;
+  width: auto;
   
-  position: relative;
+  position: absolute;
   
-} */
+} 
 
 canvas {
   opacity: 0.5;
