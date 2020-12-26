@@ -97,20 +97,17 @@ nav ul a {
      object-fit: cover;
 }
 
-/* start of cards */
-.img-wrapper {
-  width: auto;
-  max-height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+.card {
+  color: #FFFDF2;
+  letter-spacing: 1.3px;
 }
 
-/* end of cards */
+.underline {
+  border-bottom: 1px solid;
+}
+
 /* End of section two and three */
 .box:hover {
-  /*   -webkit-transition: 0.9s ease;
-          transition: 0.9s ease;
-  border-bottom: 3px solid white; */
   color: #0070FF;
 }
 
@@ -144,4 +141,19 @@ nav ul a {
 }
 
 /*********************************/
+.section-three {
+  background-color: black;
+  min-height: 80vh;
+}
+
+/* canvas {
+ display:block;
+  max-height: 30%;
+  
+  position: relative;
+  
+} */
+canvas {
+  opacity: 0.5;
+}
 /*# sourceMappingURL=main.css.map */

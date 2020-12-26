@@ -53,7 +53,6 @@ nav {
 /* End of navbar */
 
 /* Start of section one */
-
 .text-center {
   color: $color-dark;
   font-size: 2rem;
@@ -92,26 +91,22 @@ nav {
     width: auto;
     max-height: 400px;
     object-fit: cover;
-  }
-}  
-
-
-/* start of cards */
-.img-wrapper {
-  width: auto;
-  max-height: 100vh;
-  object-fit: cover;
+  }  
 }
-/* end of cards */
 
+.card {
+  color: $color-light;
+  letter-spacing: 1.3px;
+}
 
+.underline {
+  border-bottom:1px solid;
+  
+}
 /* End of section two and three */
 
 
 .box:hover {
-/*   -webkit-transition: 0.9s ease;
-          transition: 0.9s ease;
-  border-bottom: 3px solid white; */
   color: #0070FF;
 }
 
@@ -134,3 +129,21 @@ nav {
 
 /*********************************/
 
+.section-three {
+  background-color: black;
+  min-height: 80vh;
+}
+
+
+
+/* canvas {
+ display:block;
+  max-height: 30%;
+  
+  position: relative;
+  
+} */
+
+canvas {
+  opacity: 0.5;
+}
