@@ -18,8 +18,6 @@ html body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  margin: 10px;
   line-height: 1.5;
   background: white;
 }
@@ -36,7 +34,7 @@ html body {
 /***** Start of main components of the webpage ****/
 /* Start of navbar */
 nav {
-  width: 100%;
+  /* width: 100%; */
   margin-top: 10px;
   text-align: center;
 }
@@ -59,7 +57,7 @@ nav ul a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 50vh;
+  min-height: 60vh;
   letter-spacing: 2px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 242, 0.1)), to(#262626)), url("../images/main.jpg");
   background-image: linear-gradient(rgba(255, 253, 242, 0.1), #262626), url("../images/main.jpg");
@@ -69,7 +67,7 @@ nav ul a {
 }
 
 .text-center {
-  min-height: 25vh;
+  min-height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,11 +84,29 @@ nav ul a {
 }
 
 /* End of section one */
+/* Start of section two and three */
 .section-two {
   font-size: 2rem;
   color: #262626;
 }
 
+.section-two img {
+  width: auto;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* start of cards */
+.img-wrapper {
+  width: auto;
+  max-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* end of cards */
+/* End of section two and three */
 .box:hover {
   /*   -webkit-transition: 0.9s ease;
           transition: 0.9s ease;

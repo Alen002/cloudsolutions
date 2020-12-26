@@ -19,8 +19,6 @@ html {
   body {
     box-sizing: border-box;
     font-family: $font-style;
-    font-size: 1rem;
-    margin: 10px;
     line-height: 1.5;
     background: white;   
    }
@@ -39,7 +37,7 @@ html {
 
 /* Start of navbar */
 nav { 
-  width: 100%;
+  /* width: 100%; */
   margin-top: 10px;
   text-align: center;
   
@@ -64,7 +62,7 @@ nav {
 // Image of section one set to viewport 50vh
 .section-one-first {
   align-items: center;
-  min-height: 50vh;
+  min-height: 60vh;
   letter-spacing: 2px; 
   background-image: linear-gradient( 
     rgba($color-light, 0.1), 
@@ -78,7 +76,7 @@ nav {
 
 // Second column of section one with two subcolums set to viewport 25vh
 .text-center {
-  min-height: 25vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,10 +84,29 @@ nav {
 }
 /* End of section one */
 
+/* Start of section two and three */
 .section-two {
   font-size: 2rem;
   color: $color-dark;
+  img {
+    width: auto;
+    max-height: 400px;
+    object-fit: cover;
+  }
 }  
+
+
+/* start of cards */
+.img-wrapper {
+  width: auto;
+  max-height: 100vh;
+  object-fit: cover;
+}
+/* end of cards */
+
+
+/* End of section two and three */
+
 
 .box:hover {
 /*   -webkit-transition: 0.9s ease;
