@@ -20,11 +20,16 @@ function GetRandomColor() {
 
 //Particle object with random starting position, velocity and color
 var Particle = function () {
+    this.Color = GetRandomColor();
+
     this.x = canvas.width * Math.random();
     this.y = canvas.height * Math.random();
-    this.vx = 0.5 * Math.random();
-    this.vy = 0.5 * Math.random();
-    this.Color = GetRandomColor();
+    // Change speed of movement
+    // Higher vx and vy number equals increased speed
+    this.vx = 0.2 * Math.random();
+    this.vy = 0.2 * Math.random();
+   
+    // Change size of the elements
     this.r = 10 * Math.random();
 
 }
