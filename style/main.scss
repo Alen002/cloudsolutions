@@ -2,7 +2,6 @@
 $color-light: #FFFDF2;
 $color-medium: #B1ABB4;
 $color-dark: #262626;
-$shadow: 0 1px 5px rgba(76, 76, 76, 0.7);
 $font-style: 'Roboto', sans-serif;
 
 *,
@@ -10,7 +9,7 @@ $font-style: 'Roboto', sans-serif;
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;}
 
 html {
   animation: 1s fadein;
