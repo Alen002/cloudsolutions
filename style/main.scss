@@ -37,7 +37,6 @@ html {
 
 /* Start of navbar */
 nav { 
-  /* width: 100%; */
   margin-top: 10px;
   text-align: center;
   
@@ -50,6 +49,16 @@ nav {
     }
   }
 } 
+
+// Remove border of navbar-toggler
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
 /* End of navbar */
 
 /* Start of section one */
@@ -81,7 +90,7 @@ canvas {
 }
 /* End of section one */
 
-/* Start of section two and three */
+/* Start of section two */
 .section-two {
   font-size: 2rem;
   color: $color-dark;
@@ -101,8 +110,29 @@ canvas {
   border-bottom:1px solid;
   
 }
-/* End of section two and three */
+/* End of section two */
 
+/* Start of section three */
+.section-three {
+  background-color: black;
+  min-height: 80vh;
+}
+
+// Image of section three set to viewport 50vh
+.section-three {
+  align-items: center;
+  min-height: 70vh;
+  letter-spacing: 2px; 
+  background-image: linear-gradient( 
+    rgba($color-light, 0.1), 
+    rgba($color-dark, 2.0),
+  ), 
+  url('../images/main.jpg');    
+  background-size: cover;
+  background-position: bottom; 
+  padding: 1.6rem; 
+}
+/* End of section three */
 
 .box:hover {
   color: #0070FF;
@@ -123,27 +153,5 @@ canvas {
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
-}
-
-/*********************************/
-
-.section-three {
-  background-color: black;
-  min-height: 80vh;
-}
-
-// Image of section one set to viewport 50vh
-.section-three {
-  align-items: center;
-  min-height: 60vh;
-  letter-spacing: 2px; 
-  background-image: linear-gradient( 
-    rgba($color-light, 0.1), 
-    rgba($color-dark, 2.0),
-  ), 
-  url('../images/main.jpg');    
-  background-size: cover;
-  background-position: bottom; 
-  padding: 1.6rem; 
 }
 

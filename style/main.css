@@ -34,7 +34,6 @@ html body {
 /***** Start of main components of the webpage ****/
 /* Start of navbar */
 nav {
-  /* width: 100%; */
   margin-top: 10px;
   text-align: center;
 }
@@ -44,6 +43,16 @@ nav ul a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.6rem;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /* End of navbar */
@@ -85,7 +94,7 @@ canvas {
 }
 
 /* End of section one */
-/* Start of section two and three */
+/* Start of section two */
 .section-two {
   font-size: 2rem;
   color: #262626;
@@ -107,7 +116,27 @@ canvas {
   border-bottom: 1px solid;
 }
 
-/* End of section two and three */
+/* End of section two */
+/* Start of section three */
+.section-three {
+  background-color: black;
+  min-height: 80vh;
+}
+
+.section-three {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 70vh;
+  letter-spacing: 2px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 242, 0.1)), to(#262626)), url("../images/main.jpg");
+  background-image: linear-gradient(rgba(255, 253, 242, 0.1), #262626), url("../images/main.jpg");
+  background-size: cover;
+  background-position: bottom;
+  padding: 1.6rem;
+}
+
+/* End of section three */
 .box:hover {
   color: #0070FF;
 }
@@ -139,24 +168,5 @@ canvas {
   to {
     opacity: 1;
   }
-}
-
-/*********************************/
-.section-three {
-  background-color: black;
-  min-height: 80vh;
-}
-
-.section-three {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 60vh;
-  letter-spacing: 2px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 242, 0.1)), to(#262626)), url("../images/main.jpg");
-  background-image: linear-gradient(rgba(255, 253, 242, 0.1), #262626), url("../images/main.jpg");
-  background-size: cover;
-  background-position: bottom;
-  padding: 1.6rem;
 }
 /*# sourceMappingURL=main.css.map */
