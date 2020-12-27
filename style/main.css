@@ -58,17 +58,13 @@ nav ul a {
   min-height: 60vh;
 }
 
-.section-three {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 60vh;
-  letter-spacing: 2px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 242, 0.1)), to(#262626)), url("../images/main.jpg");
-  background-image: linear-gradient(rgba(255, 253, 242, 0.1), #262626), url("../images/main.jpg");
-  background-size: cover;
-  background-position: bottom;
-  padding: 1.6rem;
+canvas {
+  /* height: 100%;
+   width: 100%; */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.4;
 }
 
 .text-center {
@@ -151,14 +147,16 @@ nav ul a {
   min-height: 80vh;
 }
 
-canvas {
-  /* display:block; */
-  max-height: 100%;
-  width: auto;
-  position: absolute;
-}
-
-canvas {
-  opacity: 0.5;
+.section-three {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60vh;
+  letter-spacing: 2px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 242, 0.1)), to(#262626)), url("../images/main.jpg");
+  background-image: linear-gradient(rgba(255, 253, 242, 0.1), #262626), url("../images/main.jpg");
+  background-size: cover;
+  background-position: bottom;
+  padding: 1.6rem;
 }
 /*# sourceMappingURL=main.css.map */

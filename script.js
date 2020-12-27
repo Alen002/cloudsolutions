@@ -3,7 +3,7 @@ var ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 var particles = [];
-var num_particles = 175;//Change that to your liking
+var num_particles = 200;//Change that to your liking
 
 //Helper function to get a random color - but not too dark
 function GetRandomColor() {

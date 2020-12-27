@@ -63,20 +63,19 @@ nav {
   min-height: 60vh ;
 }
 
-// Image of section one set to viewport 50vh
-.section-three {
-  align-items: center;
-  min-height: 60vh;
-  letter-spacing: 2px; 
-  background-image: linear-gradient( 
-    rgba($color-light, 0.1), 
-    rgba($color-dark, 2.0),
-  ), 
-  url('../images/main.jpg');    
-  background-size: cover;
-  background-position: bottom; 
-  padding: 1.6rem; 
-}
+canvas {
+   
+/* height: 100%;
+   width: 100%; */
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+  opacity: 0.4;   
+} 
+ 
+
+
+
 
 // Second column of section one with two subcolums set to viewport 25vh
 .text-center {
@@ -139,17 +138,18 @@ nav {
   min-height: 80vh;
 }
 
-
-
-canvas {
- /* display:block; */
-  max-height: 100%;
-  width: auto;
-  
-  position: absolute;
-  
-} 
-
-canvas {
-  opacity: 0.5;
+// Image of section one set to viewport 50vh
+.section-three {
+  align-items: center;
+  min-height: 60vh;
+  letter-spacing: 2px; 
+  background-image: linear-gradient( 
+    rgba($color-light, 0.1), 
+    rgba($color-dark, 2.0),
+  ), 
+  url('../images/main.jpg');    
+  background-size: cover;
+  background-position: bottom; 
+  padding: 1.6rem; 
 }
+
