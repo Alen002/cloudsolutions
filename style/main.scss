@@ -60,12 +60,6 @@ nav {
 }
 /* End of navbar */
 
-/* Start of section one */
-.text-center {
-  color: $color-dark;
-  font-size: 2rem;
-}
-
 .section-one-first {
   background-color: black;
   min-height: 70vh ;
@@ -80,12 +74,14 @@ canvas {
 } 
  
 // Second column of section one with two subcolums set to viewport 25vh
-.text-center {
+.text-styling {
   min-height: 35vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: $color-dark;
+  font-size: 2rem;
 }
 /* End of section one */
 
@@ -139,12 +135,9 @@ canvas {
 
 /**** Footer ****/
 #footer {
-  border-top: solid 1px $color-medium;
-  border-bottom: solid 1px $color-medium;
-  margin-top: 10px;
   padding: 1.2rem;
   font-size: 1.6rem;
-  text-align: center;
+  /* text-align: center; */
 }
 /**** End of footer ****/
 
@@ -153,3 +146,12 @@ canvas {
   to   { opacity: 1; }
 }
 
+.test {
+/*   
+  width: 40%;
+  margin: auto;
+  background-color: red; */
+  text-align: center;
+  /* position: relative; */
+
+}
