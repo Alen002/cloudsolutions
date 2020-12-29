@@ -1,13 +1,13 @@
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-var particles = [];
-var num_particles = 200;//Change that to your liking
+let particles = [];
+let num_particles = 200;//Change that to your liking
 
 //Helper function to get a random color - but not too dark
 function GetRandomColor() {
-    var r = 0, g = 0, b = 0;
+    let r = 0, g = 0, b = 0;
     while (r < 100 && g < 100 && b < 100)
     {
         r = Math.floor(Math.random() * 256);
@@ -19,7 +19,7 @@ function GetRandomColor() {
 }
 
 //Particle object with random starting position, velocity and color
-var Particle = function () {
+let Particle = function () {
     this.Color = GetRandomColor();
 
     this.x = canvas.width * Math.random();
@@ -66,6 +66,6 @@ function loop() {
     requestAnimationFrame(loop);
 }
 //Create particles
-for (var i = 0; i < num_particles; i++)
+for (let i = 0; i < num_particles; i++)
     particles.push(new Particle());
 loop();
